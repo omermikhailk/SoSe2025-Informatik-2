@@ -1,15 +1,9 @@
-public class Main {
-	public static void main(String[] args) {
-		;
-	}
-}
-
 public class Tier {
 	String name;
 	int alter;
-	int gewicht;
+	double gewicht;
 
-	public Tier(String name, int alter, int gewicht) {
+	public Tier(String name, int alter, double gewicht) {
 		this.name = name;
 		this.alter = alter;
 		this.gewicht = gewicht;
@@ -23,7 +17,7 @@ public class Tier {
 		return this.alter;
 	}
 
-	public int getGewicht() {
+	public double getGewicht() {
 		return this.gewicht;
 	}
 
@@ -39,7 +33,7 @@ public class Tier {
 		}
 	}
 
-	public void setGewicht(int gewicht) {
+	public void setGewicht(double gewicht) {
 		if (this.checkGewicht(gewicht)) {
 			this.gewicht = gewicht;
 		}
@@ -48,14 +42,14 @@ public class Tier {
 	public boolean checkName(String name) {
 		// Soll `False` zueruckgeben, falls `name` leer ist, ansonsten ist der
 		// `return`-Wert `true`
-		return name;
+		return Boolean.valueOf(name);
 	}
 	
 	public boolean checkAlter(int alter) {
 		return alter > 0;
 	}
 
-	public boolean checkGewicht(int gewicht) {
+	public boolean checkGewicht(double gewicht) {
 		return gewicht > 0;
 	}
 

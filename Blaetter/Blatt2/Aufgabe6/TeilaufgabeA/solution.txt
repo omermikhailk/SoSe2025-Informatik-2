@@ -2,15 +2,15 @@ Haustier
 -
 name (String)
 alter (int)
-gewicht (int)
+gewicht (double)
 -
 getName (String)
 setName (void)
 checkName (boolean)
-getAlter (String)
+getAlter (int)
 setAlter (void)
 checkAlter (boolean)
-getGewicht (String)
+getGewicht (double)
 setGewicht (void)
 checkGewicht (boolean)
 isLight (boolean)

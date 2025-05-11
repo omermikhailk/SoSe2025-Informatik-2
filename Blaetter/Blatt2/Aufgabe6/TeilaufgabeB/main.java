@@ -46,7 +46,7 @@ public class Tier {
 	}
 
 	public boolean checkName(String name) {
-		// Soll `False` zueruckgeben, falls `name` leer ist, ansonsten waere ist der
+		// Soll `False` zueruckgeben, falls `name` leer ist, ansonsten ist der
 		// `return`-Wert `true`
 		return name;
 	}
@@ -65,4 +65,4 @@ public class Tier {
 }
 
 
-// Frage: Gibt es einen grossen Unterscheid in Java zwischen this.Methode() bzw. this.Attribut zu nutzen, statt Methode() bzw. Attribut() "direkt" zu verwenden
+// Frage: Gibt es einen grossen Unterscheid in Java zwischen this.Methode() bzw. this.Attribut zu nutzen, statt Methode() bzw. Attribut() "direkt" zu verwenden?

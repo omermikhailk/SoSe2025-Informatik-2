@@ -1,0 +1,20 @@
+Paket
+-
+receiver (String)
+weight (double)
+isSentStatus (boolean)
+-
+basePrice (double) - class attribute
+-
+getReceiver (String)
+changeReceiver (void)
+checkReceiver (boolean)
+getWeight (double)
+changeWeight (void)
+checkWeight (boolean)
+getIsSentStatus (boolean)
+changeIsSentStatus (void)
+
+getBasePrice (double)
+
+getTotalPrice (double)

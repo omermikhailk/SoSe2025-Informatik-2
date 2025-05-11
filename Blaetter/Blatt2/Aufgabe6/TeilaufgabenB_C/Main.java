@@ -16,7 +16,7 @@ class Main {
 	}
 }
 
-class Tier {
+public class Tier {
 	String name;
 	int alter;
 	double gewicht;
@@ -80,3 +80,6 @@ class Tier {
 		return "Name: " + this.getName() + ", Alter: " + this.getAlter() + ", and Gewicht: " + this.getGewicht() + ".";
 	}
 }
+
+
+// Frage: Gibt es einen grossen Unterscheid in Java zwischen this.Methode() bzw. this.Attribut zu nutzen, statt Methode() bzw. Attribut() "direkt" zu verwenden?

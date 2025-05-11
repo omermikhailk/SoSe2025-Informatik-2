@@ -1,0 +1,16 @@
+Haustier
+-
+name (String)
+alter (int)
+gewicht (int)
+-
+getName (String)
+setName (void)
+checkName (boolean)
+getAlter (String)
+setAlter (void)
+checkAlter (boolean)
+getGewicht (String)
+setGewicht (void)
+checkGewicht (boolean)
+isLight (boolean)

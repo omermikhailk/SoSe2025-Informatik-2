@@ -1,0 +1,33 @@
+1). public class Random
+extends Object
+implements RandomGenerator, Serializable
+
+2). Diese Objekt representiert einen Instanz der Klasse `Random`, mit dem man verschiedene zufällige Werte von Datentypen genererien kann, noch dazu enthält diese Objekt einer `seed` Variable für sichere/echte Zufälligkeit.
+
+3). Nein, das `final` Stichwort steht nirgendwo in der Header der Klasse (Klassenkopf).
+
+4). Nein, das `abstract` Stichwort steht nirgendwo in der Header der Klasse (Klassenkopf).
+
+5). `RandomGenerator` und `Serializable`.
+
+6). `Objekt`.
+
+7). `SecureRandom` und `ThreadLocalRandom`.
+
+8). Module: `java.base`; Packet: `java.util`.
+
+9). `nextGaussian()`.
+
+10). Sie setzt den Wert der `seed` Variable, sodass jedes Mal eine zufällige Zahl generiert wird, gäbe es praktisch keine Chance, dass verschiedene Nutzer des Pakets die gleiche Zahl zürückbekommen würden. Der Wert von `seed` wird bei jedem Zufallsalgorithm benutzt, deswegen muss der Standardwert der Variable geändert werden.
+
+11). `wait() / wait(long timeoutMillis) / wait(long timeout MIllis, int nanos)` von `Objekt`. Diese Methoden existieren in `Random` denn `Random` ist eine Unterklasse von `Objekt` und erbt davon alle Methoden davon.
+
+12). Ja, eine: `Random.from(RandomGenerator generator)`.
+
+13). Ja, viele. Jede Instanzmethode ist auch eine Objektmethode. Ein Beispiel wäre `nextBoolean()`.
+
+14). Ja, zwei: `Random()` wobei die `seed` selbst geändert wird und `Random(long seed)` wobei die `seed` vom Nutzer gesetzt wird.
+
+15). Nein.
+
+16). Nein.

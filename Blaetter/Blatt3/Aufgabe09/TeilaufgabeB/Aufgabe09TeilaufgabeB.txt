@@ -1,0 +1,11 @@
+1. public interface Comparable<T>.
+
+2. Ja, hier ist die Liste: ArrayType, ByteValue, CharValue, ChronoLocalDate, ChronoLocalDateTime<D>, Chronology, ChronoZonedDateTime<D>, ClassType, Delayed, DoubleValue, Field, FloatValue, IntegerValue, InterfaceType, LocalVariable, Location, LongValue, Method, Name, Path, ProcessHandle, ReferenceType, RunnableScheduledFuture<V>, ScheduledFuture<V>, ShortValue.
+
+3. Nein.
+
+4. `int compareTo(T o)`.
+
+5. Nein, die einzige Methode ist eine Instanzmethode und keine statische Methode (weil es vergleicht sich selbst mit einer gegebenen Objekt).
+
+6. `AbstractChronology`

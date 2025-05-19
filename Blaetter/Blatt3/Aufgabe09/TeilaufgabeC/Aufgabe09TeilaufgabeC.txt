@@ -1,33 +1,33 @@
-1). public final class LocalDate
+1). ```public final class LocalDate
 extends Object
-implements Temporal, TemporalAdjuster, ChronoLocalDate, Serializable
+implements Temporal, TemporalAdjuster, ChronoLocalDate, Serializable```
 
-2). Diese Objekt lässt man Operationen (Addition und Differenz) von einem gegebenen Datum machen, und z.B. was der Tag/Monat/Jahr von einem Datum war, und auch Vergleichsoperationen (ob ein Datum größer oder kleiner als ein anderes Datum ist)
+2). Diese Objekt lässt man Operationen (Addition und Differenz) von einem gegebenen Datum machen, und z.B. was der Tag/Monat/Jahr von einem Datum war, und auch Vergleichsoperationen (ob ein Datum größer oder kleiner als ein anderes Datum ist).
 
 3). Ja.
 
-4). Serializable, Comparable<ChronoLocalDate>, ChronoLocalDate, Temporal, TemporalAccessor, TemporalAdjuster
+4). `Serializable`, `Comparable<ChronoLocalDate>`, `ChronoLocalDate`, `Temporal`, `TemporalAccessor`, `TemporalAdjuster`.
 
-5). `Objekt`
+5). `Objekt`.
 
-6). Module: java.base, Paket: java.time
+6). Module: `java.base`, Paket: `java.time`.
 
 7). `public static LocalDate now()` erstellt sich ein `LocalDate` Objekt von dem aktuellen Datum.
 
-8). Die `parse` Methode nimmt eine Zeichenkette ein und überprüft ob sie als ein Datum representiert werden kann. Wenn so, dann wird ein LocalDate Objekt zürückgegeben. Diese Methode wäre static, denn die hängt nicht von einem Instanz ab, und kann ohne eine abgerufen werden.
+8). Die `parse` Methode nimmt eine Zeichenkette ein und überprüft ob sie als ein Datum representiert werden kann. Wenn so, dann wird ein `LocalDate` Objekt zürückgegeben. Diese Methode wäre static, denn die hängt nicht von einem Instanz ab, und kann ohne eine abgerufen werden.
 
-9). notify() von der Objekt Klasse.
+9). `notify()` von der `Objekt` Klasse.
 
-10). LocalDate e = d.minusDays(87);
+10). `LocalDate e = d.minusDays(87);`.
 
-11). Ja, alle statische Methoden hier sind Klassenmethode. Sie können ohne eine Instanz abgerufen werden. `LocalDate.now() wäre ein Beispiel`.
+11). Ja, alle statische Methoden hier sind Klassenmethode. Sie können ohne eine Instanz abgerufen werden. `LocalDate.now()` wäre ein Beispiel.
 
-12). Ja, viele, plusDays() wäre ein Beispiel davon. Sie braucht eine Instanz von einem LocalDate Objekt um abgerufen zu werden.
+12). Ja, viele, `plusDays()` wäre ein Beispiel davon. Sie braucht eine Instanz von einem `LocalDate` Objekt um abgerufen zu werden.
 
-13). Nein. Man kann eine LocalDate Objekt durch statische Methoden erhalten aber das ist keine direkte und öffentliche KKonstruktor, die Konstruktur von der Klasse müsste heimlich danach durchgeführt werden.
+13). Nein. Man kann eine `LocalDate` Objekt durch statische Methoden erhalten aber das ist keine direkte und öffentliche Konstruktor, die Konstruktur von der Klasse müsste heimlich danach durchgeführt werden.
 
-14). Ja, genau 3. LocalDate.EPOCH, LocalDate.MAX, und LocalDate.MIN.
+14). Ja, genau 3. `LocalDate.EPOCH`, `LocalDate.MAX`, und `LocalDate.MIN`.
 
 15). Nein.
 
-16). toString(). Und ja, die LocalDate Implementierung von toString ist anders als in Objekt. In LocalDate wird ein Datum ausgegeben und in Objekt wird der Name der Klasse plus die Hexadresse der ID der Klasse ausgegeben.
+16). `toString()`. Und ja, die `LocalDate` Implementierung von `toString` ist anders als in `Objekt`. In `LocalDate` wird ein Datum ausgegeben und in `Objekt` wird der Name der Klasse plus die Hexadresse der ID der Klasse ausgegeben.

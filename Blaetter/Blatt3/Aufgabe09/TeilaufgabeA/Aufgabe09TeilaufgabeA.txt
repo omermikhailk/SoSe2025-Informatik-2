@@ -1,6 +1,6 @@
-1). public class Random
+1). ```public class Random
 extends Object
-implements RandomGenerator, Serializable
+implements RandomGenerator, Serializable```
 
 2). Diese Objekt representiert einen Instanz der Klasse `Random`, mit dem man verschiedene zufällige Werte von Datentypen genererien kann, noch dazu enthält diese Objekt einer `seed` Variable für sichere/echte Zufälligkeit.
 
@@ -20,7 +20,7 @@ implements RandomGenerator, Serializable
 
 10). Sie setzt den Wert der `seed` Variable, sodass jedes Mal eine zufällige Zahl generiert wird, gäbe es praktisch keine Chance, dass verschiedene Nutzer des Pakets die gleiche Zahl zürückbekommen würden. Der Wert von `seed` wird bei jedem Zufallsalgorithm benutzt, deswegen muss der Standardwert der Variable geändert werden.
 
-11). `wait() / wait(long timeoutMillis) / wait(long timeout MIllis, int nanos)` von `Objekt`. Diese Methoden existieren in `Random` denn `Random` ist eine Unterklasse von `Objekt` und erbt davon alle Methoden davon.
+11). `wait() / wait(long timeoutMillis) / wait(long timeout MIllis, int nanos)` von `Objekt`. Diese Methoden existieren in `Random` denn `Random` ist eine Unterklasse von `Objekt` und erbt davon alle Methoden.
 
 12). Ja, eine: `Random.from(RandomGenerator generator)`.
 

@@ -5,7 +5,12 @@ import java.util.Iterator;
 class Aufgabe18TeilD {
     public static void main(String[] args) {
         Random r = new Random();
-        int n = r.nextInt(101);
+        int n = 0;
+        while (n == 0) {
+            // Sichergehen, dass n positiv waere, ansonsten koennte es auch null sein, denn
+            // null ist im Startbound von nextInt enthalten
+            n = r.nextInt(101);
+        }
         ArrayList<Integer> list = new ArrayList<Integer>();
         Iterator<Integer> integerIterator = r.ints(n, 1, 1001).iterator();
 

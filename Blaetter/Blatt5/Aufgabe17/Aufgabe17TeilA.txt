@@ -1,0 +1,9 @@
+Mit dem Beispiel von `with(TemporalAdjuster adjuster)` und `with(TemporalField field, long newValue)` ist es hier klar
+den Begriff von Polymorphismus zu sehen. Einfach erklaert bedeutet der Begriff, dass eine Methode in mehr als eine Art
+funktionieren/verhalten kann, abhaengig von den Eingabenparamter, die zum Konstruktor angegeben wurden.
+
+Mit der `with()` Methode geht das auch. Bei dem ersten Konstruktor bekommen wir ein LocalDate Objekt, die mit einem festen
+Wert von adjuster (von dem TemporalAdjuster Typ) geaendert wurde.
+
+Aber beim zweiten Konstruktor, statt alles mit einer Rechnenoperation zu aendern (von plus oder minus adjuster), hier lassen
+wir ein beliebiges TemporalField Wert/Attribut direkt aendern, indem wir setzen einen neuen Wert selbst ein.

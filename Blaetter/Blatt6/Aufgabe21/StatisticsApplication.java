@@ -6,22 +6,28 @@ class StatisticsApplication {
         int numberOfChars = 0;
         int numberOfNumericChars = 0;
         int averageLength = 0;
+        int offset = 0;
 
         if (inputs == null || inputs.length == 0) {
             return new Statistics(averageLength, numberOfNumericChars);
         }
         else {
             for (String s : inputs) {
-                numberOfChars += s.length();
+                if (s == null | s.isEmpty()) {
+                    offset += 1;
+                }
+                else {
+                    numberOfChars += s.length();
 
-                for (Character c : s.toCharArray()) {
-                    if (Character.isDigit(c)) {
-                        numberOfNumericChars += 1;
+                    for (Character c : s.toCharArray()) {
+                        if (Character.isDigit(c)) {
+                            numberOfNumericChars += 1;
+                        }
                     }
                 }
             }
 
-            averageLength = numberOfChars / inputs.length;
+            averageLength = numberOfChars / (inputs.length - offset);
             // Hier koennte man auch nach = (double) machen aber mMn ergibt das keinen Sinn
             // ein Teil von einem Buchstabe in den Ergebnissen zu zaehlen
 
@@ -34,7 +40,7 @@ class StatisticsApplication {
         String testOneRepr = String.join(" \" , \"", testOne);
         String[] testTwo = {"hello", "hello", "12345"};
         String testTwoRepr = String.join(" \" , \"", testTwo);
-        String[] testThree = {"Doing", "my", "homework", "!"};
+        String[] testThree = {"Doing", "my", "", "work", "!"};
         String testThreeRepr = String.join(" \" , \"", testThree);
 
         Statistics one = collectStatistics(testOne);

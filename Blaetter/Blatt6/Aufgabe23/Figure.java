@@ -4,7 +4,7 @@ class Figure {
     private int y;
 
     public Figure() {
-        this.name = "Test figure";
+        this.name = "Knight of Javaland";
         this.x = 0;
         this.y = 0;
     }

@@ -1,5 +1,5 @@
 class StatisticsApplication {
-    static Statistics collectStatistics(String... inputs) {
+    static Statistics collectStatistics(String... inputs) throws InvalidCharacterException {
         // We need to find out the number of numeric characters
         // And then the average length of all strings (regardless of what characters were in there)
         
@@ -13,8 +13,14 @@ class StatisticsApplication {
         }
         else {
             for (String s : inputs) {
-                if (s == null | s.isEmpty()) {
+                if (s == null) {
+                    throw new NullPointerException("Null input ignored");
+                }
+                else if (s.isEmpty()) {
                     offset += 1;
+                }
+                else if (s.indexOf("@") != -1) {
+                    throw new InvalidCharacterException("Invalid character '@' in input " + s);
                 }
                 else {
                     numberOfChars += s.length();
@@ -35,12 +41,12 @@ class StatisticsApplication {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidCharacterException {
         String[] testOne = {};
         String testOneRepr = String.join(" \" , \"", testOne);
         String[] testTwo = {"hello", "hello", "12345"};
         String testTwoRepr = String.join(" \" , \"", testTwo);
-        String[] testThree = {"Doing", "my", "", "work", "!"};
+        String[] testThree = {"Doing", "char@", "my", "", "work", "!"};
         String testThreeRepr = String.join(" \" , \"", testThree);
 
         Statistics one = collectStatistics(testOne);
